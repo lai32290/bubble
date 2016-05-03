@@ -12,7 +12,7 @@ function task() {
 	var taskProcess = gulp.src(tasks[taskName].src)
 		.pipe(gulp.dest(tasks.copy.dest));
 
-	taskProcess = config.afterTask(taskName, taskProcess);
+	config.afterTask(taskName, taskProcess);
 
 	return taskProcess;
 }

@@ -14,9 +14,7 @@ config.hasNotify = function(task) {
 
 config.afterTask = function(task, taskProcess) {
 	if(config.hasNotify() && config.hasNotify(task))
-		taskProcess = taskProcess.pipe(notify(config.tasks[task].notify));
-
-	return taskProcess;
+		taskProcess.pipe(notify(config.tasks[task].notify));
 };
 
 config.beforeTask = function(task) {
