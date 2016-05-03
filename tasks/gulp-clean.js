@@ -10,10 +10,10 @@ const config = require('./bubble-config.js')
 function task() {
 	config.beforeTask(taskName);
 
-	var taskProcess = taskProcess = gulp.src(taskName)
+	var taskProcess = gulp.src(tasks[taskName].src)
 		.pipe(clean());
 
-	config.afterTask(taskName);
+	taskProcess = config.afterTask(taskName, taskProcess);
 
 	return taskProcess;
 }

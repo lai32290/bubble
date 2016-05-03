@@ -14,7 +14,7 @@ function task() {
 		.pipe(stylus())
 		.pipe(gulp.dest(tasks[taskName].dest));
 
-	config.afterTask(taskName);
+	config.afterTask(taskName, taskProcess);
 }
 
 module.exports = task;

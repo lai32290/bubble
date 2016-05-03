@@ -10,11 +10,11 @@ const config = require('./bubble-config.js')
 function task() {
 	config.beforeTask(taskName);
 	
-	var teskProcess = gulp.src(tasks[taskName].src)
+	var taskProcess = gulp.src(tasks[taskName].src)
 		.pipe(include())
 		.pipe(gulp.dest(tasks[taskName].dest));
 
-	config.afterTask(taskName);
+	config.afterTask(taskName, taskProcess);
 }
 
 module.exports = task;
