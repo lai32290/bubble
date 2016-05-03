@@ -1,0 +1,25 @@
+# notify: true
+
+tasks:
+    gulp-clean: build
+
+    copy:
+        src: 
+            - "!src/**/_*"
+            - "!src/**/*.styl"
+            - src/**/*
+
+        dest: build
+
+    gulp-stylus:
+        src: src/css/*.styl
+        dest: build/css
+
+    gulp-include:
+        src: src/js/app.js
+        dest: build/js/
+
+    watch:
+        src: src/**/*
+        tasks:
+            - build

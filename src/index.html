@@ -1,0 +1,29 @@
+<html ng-app="app">
+	<head>
+		<link rel="stylesheet" href="/assets/bootstrap-3.3.6-dist/css/bootstrap.css">
+		<link rel="stylesheet" href="/css/style.css">
+		<script src="/assets/jquery-2.1.4.min.js"></script>
+		<script src="/assets/angular.min.js"></script>
+		<script src="/assets/angular-ui-router.js"></script>
+		<script src="/assets/angular-drag-and-drop-lists.js"></script>
+		<script src="/assets/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+	</head>
+
+	<body class="container">
+		<div class="row space-row" style="height: 30px;">
+			<div class="col-xs-12">
+				<button class="btn btn-link">Back</button>
+			</div>
+		</div>
+
+		<div class="row space-row">
+			<div class="col-xs-12">
+				<div class="view">
+					<ui-view></ui-view>
+				</div>
+			</div>
+		</div>
+		
+		<script src="/js/app.js"></script>
+	</body>
+</html>

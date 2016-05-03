@@ -1,0 +1,20 @@
+{
+  "name": "portal_login_system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-include": "^2.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-stylus": "^2.3.1",
+    "yamljs": "^0.2.7"
+  }
+}
