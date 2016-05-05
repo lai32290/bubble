@@ -10,7 +10,8 @@ function task() {
 	config.beforeTask(taskName);
 	
 	var taskProcess = gulp.src(tasks[taskName].src)
-		.pipe(gulp.dest(tasks.copy.dest));
+		.pipe(gulp.dest(tasks.copy.dest))
+		;
 
 	config.afterTask(taskName, taskProcess);
 

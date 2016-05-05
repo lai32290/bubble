@@ -13,7 +13,7 @@ function task() {
 	var taskProcess = gulp.src(tasks[taskName].src)
 		.pipe(clean());
 
-	taskProcess = config.afterTask(taskName, taskProcess);
+	config.afterTask(taskName, taskProcess);
 
 	return taskProcess;
 }

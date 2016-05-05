@@ -14,7 +14,10 @@ config.hasNotify = function(task) {
 
 config.afterTask = function(task, taskProcess) {
 	if(config.hasNotify() && config.hasNotify(task))
-		taskProcess.pipe(notify(config.tasks[task].notify));
+		if(task !== 'copy')
+			taskProcess.pipe(notify({
+				message: config.tasks[task].notify
+			}));
 };
 
 config.beforeTask = function(task) {
