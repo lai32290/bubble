@@ -1,5 +1,5 @@
 {
-  "name": "bubble",
+  "name": "gulp-bubble",
   "version": "1.0.1",
   "description": "Bubble is a NodeJS package to generate GulpJS tasks",
   "main": "bubblenod.js",
